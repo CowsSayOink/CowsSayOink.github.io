@@ -3,7 +3,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Magazines</title>
+<title>Cooking</title>
 
   <style>
     body{
@@ -32,6 +32,31 @@
     font-size: 16px;
     color: #f6f6e9;
     }
+
+     /* Style the tab */
+    .tab {
+      overflow: hidden;
+      background-color: #f6f6e9;
+
+    }
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+      background-color: inherit;
+      color: #7b3911;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddddc2;
+    }
+
   </style>
 
 </head>
@@ -40,29 +65,19 @@
 
    <!-- Tab links -->
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    <button class="tablinks" onclick="location.href = 'index.html'">Home</button>
+    <div class = "tablinks"> <button onclick="location.href = 'magazines.html'"> Magazine Editions </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'adventures.html'"> Adventures </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'travel.html'"> Travel </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'fountain pens.html'"> Fountain pens </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'restaurant guides.html'"> Restaurant guides </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'library.html'"> Library </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'code hub.html'"> Code hub </button> </div>
   </div>
 
-  <!-- Tab content -->
-  <div id="London" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
-  </div>
-
-  <div id="Paris" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
-  </div>
-
-  <div id="Tokyo" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div> 
 
 
-<h1>Magazine Editorial</h1>
+<h1>Cooking</h1>
 <p1>This is a paragraph.</p1>
 
 </body>

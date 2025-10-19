@@ -3,11 +3,11 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>Magazines</title>
+<title>Fountain Pens</title>
 
   <style>
     body{
-        background-color: #1d7151;
+        background-color: #f6f6e9;
         color: #7b3911;
         margin: 25px;
         padding: 0;
@@ -18,13 +18,13 @@
     font-family: "Archivo Black", Times, serif;
     font-size: 30px;
     margin-top: 50px;
-    color: #f6f6e9;
+    color: #7b3911;
     }
 
     h2 {
     font-family: "Archivo Black", Times, serif;
     font-size: 25px;
-    color: #f6f6e9;
+    color: #7b3911;
     }
 
     p1 {
@@ -32,6 +32,48 @@
     font-size: 16px;
     color: #f6f6e9;
     }
+
+    img {
+      width: 400px;
+      border-radius: 25px;
+      margin-left: 50px;
+    }
+
+     /* Style the tab */
+    .tab {
+      overflow: hidden;
+      background-color: #dc661f;
+
+    }
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+      background-color: inherit;
+      color: #7b3911;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddddc2;
+    }
+
+
+    .container {
+      display: grid;
+      gap: 0px;
+      grid-template-columns: auto auto;
+      padding: 0px;
+    }
+
+
+    
+
   </style>
 
 </head>
@@ -40,31 +82,94 @@
 
    <!-- Tab links -->
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    <button class="tablinks" onclick="location.href = 'index.html'">Home</button>
+    <div class = "tablinks"> <button onclick="location.href = 'magazines.html'"> Magazine Editions </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'adventures.html'"> Adventures </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'travel.html'"> Travel </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'cooking.html'"> Cooking </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'restaurant guides.html'"> Restaurant guides </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'library.html'"> Library </button> </div>
+    <div class = "tablinks"> <button onclick="location.href = 'code hub.html'"> Code hub </button> </div>
   </div>
 
-  <!-- Tab content -->
-  <div id="London" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
+
+
+<h1>Fountain Pens</h1>
+
+  <div class = "container">
+    <div><p class = "p1">
+    From left to right, we have: Kaweco Brass sport, Lamy 2000, Edison G-10, Diplomat aero, Pilot Capless, Pilot Custom 823. All the nibs are either fine or extra-fine, as my handwriting is quite compact :) I wish I could write with other nib sizes and play with line variation and sheen, but it would drive me crazy having my e's and l's fill up. Fun fact, they all are made out of different materials, there's brass, makrolon, garolite, steel, aluminum and resin.
+    </p></div>
+    <div> <img src = "Images/aletsch.jpg"/></div>
   </div>
 
-  <div id="Paris" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
-  </div>
-
-  <div id="Tokyo" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div> 
 
 
-<h1>Magazine Editorial</h1>
-<p1>This is a paragraph.</p1>
+  
 
+<h1>
+  Story behind some of the pens:  
+</h1>
+
+<h2>
+  Kaweco
+</h2>
+  
+<p class = "p1">
+I use a Kaweco brass (eco brass with no lead) sport to do assignments and to write down notes on a daily basis. I purchased the instrument right after my vector calculus midterm in my first semester of undergrad. Since that day, it has never left me when I head down to campus. A patina can be seen where I tend to hold the pen, indicating that the pen has been put to good use. Often filled with Noodler's heart of darkness.
+</p>
+  
+  <h2>
+    Lamy 2000
+  </h2>
+
+  <p class = "p1">
+I got this pen with an EF nib, but it wrote like a Western medium, so I didn't write often with it. Then at some point I lent it to a friend who damaged the nib beyond repair, so I swapped it out with a new EF nib, and this time around, it barely put any ink on the page (super thin line). This didn't suit me either, so I ended up exchanging it for a third EF nib, and this one is the Goldilocks tip! Not too thick, not too thin.
+  </p>
+
+  <h2>
+Diplomat aero
+  </h2>
+
+  <p class = "p1">
+My 4th semester at McGill was quite hectic, due to weekly assignments for many of my courses. So after finals, I decided I would get something special. I wanted a pen that didn't have the classic black cigar look, and I ended up choosing the Pelikan M1000. It didn't write well out of the box, the nib kept on skipping since it was over-polished. The cap wiggled a tiny bit, but it had the best piston filling mechanism I had ever used. I ended up asking for a refund and got the aero. I often ink it up with purple ink :).
+  </p>
+
+
+    
+  <h2>
+Pilot custom 823
+  </h2>
+
+    <p class = "p1">
+This was the first high-end pen I got. It looks amazing and I had only heard great things about it, so when I saw it on discount on Pensachi, it was an immediate buy. It writes amazingly, and it is always fun to write letters with. I have used up an entire bottle of Iroshizuku Shin Kai with it, and now I'm using Robert Oster's fire and ice.
+    </p>
+  
+
+
+<h1>
+Paper!
+  
+</h1>
+  
+<p>
+In order to get an optimal writing experience, the fountain pen trinity of the nib, the ink and paper are main actors. A while back, I decided to find the best paper for my pens and found that the only decent store in Montreal (Nota Bene) didn't offer much of a selection. So when I visited my family in Toronto I decided that I would visit stationary stores there to see what I have been missing out... I had to stop after the second store since I had purchased enough paper to last me years. And so far my favorites are Yamamoto Cosmo Air Light, and Tomoe River. Yamamoto has great sheen and I love the texture. I also enjoy MD paper (not cotton) along with Rhodia.
+<p>
+
+
+
+<h1>
+  Fun side projects
+</h1>
+
+
+<p>
+At some point, I obviously wanted a pen box and didn't find much online that pleased me, except for <a href = "https://goldspot.com/products/diplomat-wooden-de">this</a>. Except that I was being really cheap, so I obtained the physical dimensions of it and CADed my own version and printed it. If you want the files, here is a link to my <a href ="https://www.thingiverse.com/thing:5221928">thingyverse</a>. 
+
+<p>
+
+  
+  
 </body>
 </html> 
 

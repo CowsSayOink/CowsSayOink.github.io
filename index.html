@@ -33,48 +33,89 @@
         color: #f6f6e9; /*white*/
         }
         
-        p1 {
+        .p1 {
         font-family: "Space Mono", Times, serif;
         font-size: 16px;
         color: #f6f6e9; /*white*/
         }
 
+
         .container {
           display: grid;
           gap: 10px;
           grid-template-columns: auto auto auto auto auto;
-          padding: 10px;
+          padding: 0px;
         }
 
         .container div {
         border-radius: 25px;
         padding: 20px;
-        font-size: 30px;
+        font-family: "Space Mono";
+        font-size: 20px;
         text-align: center;
         }
         .item1 {
             grid-row: 1 / span 2;
             background-color: #ffb905; /*yellow*/
+            
         }
 
         .item2 {
             background-color: #f6f6e9; /*white*/
         }
 
+        .container2 {
+          display: grid;
+          gap: 0px;
+          grid-template-columns: auto auto;
+          padding: 0px;
+        }
+
+        .container2 div {
+        padding: 0px;
+        font-family: "Space Mono";
+        font-size: 16px;
+        text-align: left;
+        }
+        
         button{
             background-color: #f6f6e9; /*white*/
             color: #7b3911; /*red*/
-            font-size: 25px;
+            font-family: "Space Mono";
+            font-size: 20px;
             text-align: center;
             border: 0px;
+        }
+        pre {
+            white-space: pre-wrap;       /* Since CSS 2.1 */
+            white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        }
+        
+        .subscribe{
+            background-color: #ffb905; /*yellow*/
+            color: #7b3911; /*red*/
+            font-family: "Space Mono";
+            font-size: 15px;
+            text-align: center;
+            border-radius: 15px;
+            
         }
         button:hover{
             color: #dc661f; /*orange*/
         }
 
-        img {
-            width: 100px;
-            
+
+        .about{
+            width: 400px;
+            border-radius: 25px;
+            margin-left: 50px;
+        }
+        
+        .coverpage{
+            width: 150px;
         }
         
     </style>
@@ -85,10 +126,10 @@
 
     
     <div class = "container">
-    <div class = "item1"><img src = "test.jpg"/></div>
+    <div class = "item1"><img class = "coverpage" src = "../../Downloads/HtmlRunner/Images/home%20page/aletsch.jpg"/> <p> Newest Edition </p> </div>
     <div class = "item2"> <button onclick="location.href = 'magazines.html'"> Magazine Editions </button> </div>
     <div class = "item2"> <button onclick="location.href = 'adventures.html'"> Adventures </button> </div>
-    <div class = "item2"> <button onclick="location.href = 'trips.html'"> Trips </button> </div>
+    <div class = "item2"> <button onclick="location.href = 'travel.html'"> Travel </button> </div>
     <div class = "item2"> <button onclick="location.href = 'cooking.html'"> Cooking </button> </div>
     <div class = "item2"> <button onclick="location.href = 'fountain pens.html'"> Fountain pens </button> </div>
     <div class = "item2"> <button onclick="location.href = 'restaurant guides.html'"> Restaurant guides </button> </div>
@@ -97,16 +138,33 @@
     </div>
 
     <h2>
-        Subscribe to our newsletter!
+        Subscribe to our newsletter! <button class="subscribe" onclick="location.href = 'magazines.html'"> Subscribe </button>
     </h2>
 
-    <p1>
-        Get an email when we upload our newest edition of our newsletter.
-    </p1>
+    <p class = "p1">
+        Get an email when we upload our newest edition of our quarterly magazine! 
+    </p>
 
-    <p1>
+    <h2>
+        About us
+    </h2>
+
+    <div class = "container2">
+        <div><pre class="p1">We started this website to share our adventures and hobbies with you! We are currently both Master's students studying Applied Physics. Felix is studying at EPFL in Switzerland and Lilly is studying at TU Delft in the Netherlands. 
+We have many hobbies in common. We enjoy spending time outdoors hiking and biking. When the weather is not so nice, we spend our time baking/cooking and reading. We also have a nice collection of fountain pens and enjoy writing letters! Send us a letter and we will be delighted to respond. 
+Felix loves puzzle games. Personal favorites include The Witness, Tametsi and he has recently discovered Cracking The Cryptic. He is interested in anything related to time, from mechanisms of mechanical watches to building atomic clocks.
+Recently, Lilly bought a film camera and has been enjoying bringing it on hikes. Lilly typically reads over 75 books a year and enjoys reading fantasy, science fiction and classics novels. 
+            
+            
+        </pre> </div>
+        <div> <img class = "about" src = "../../Downloads/HtmlRunner/Images/home%20page/aletsch.jpg"/></div>
+    </div>
+    
+    
+    
+    <p class = "p1">
         Last updated: October 19, 2025
-    </p1>
+    </p>
 
     
 </body>
