@@ -2,73 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "keywords" content="HTML, CSS">
-    <meta name="description" content="Welcome to Felix Belair's personal website. If you're curious about where I'm at in life and what my hobbies are, you're at the right place!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chez Lilly and Felix</title>
 
-    <title>Main_Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
     <style>
-        img {
-            width: 300px;
-            border-radius: 30px;
-        }
 
         body{
-            background-color: #1DE0D7;
+            background-color: #1d7151; /*green*/
+            color: #7b3911; /*red*/
+            margin: 25px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+        font-family: "Archivo Black", Times, serif;
+        font-size: 30px;
+        margin-top: 50px;
+        color: #f6f6e9; 
+        }
+
+        h2 {
+        font-family: "Archivo Black", Times, serif;
+        font-size: 25px;
+        color: #f6f6e9; /*white*/
+        }
+        
+        p1 {
+        font-family: "Space Mono", Times, serif;
+        font-size: 16px;
+        color: #f6f6e9; /*white*/
+        }
+
+        .container {
+          display: grid;
+          gap: 10px;
+          grid-template-columns: auto auto auto auto auto;
+          padding: 10px;
+        }
+
+        .container div {
+        border-radius: 25px;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+        .item1 {
+            grid-row: 1 / span 2;
+            background-color: #ffb905; /*yellow*/
+        }
+
+        .item2 {
+            background-color: #f6f6e9; /*white*/
         }
 
         button{
-            background-color: gold;
-            font-weight: bold;
+            background-color: #f6f6e9; /*white*/
+            color: #7b3911; /*red*/
+            font-size: 25px;
+            text-align: center;
+            border: 0px;
+        }
+        button:hover{
+            color: #dc661f; /*orange*/
         }
 
+        img {
+            width: 100px;
+            
+        }
+        
     </style>
 </head>
-
-
 <body>
 
+    <h1>Chez Lilly and Félix</h1>
 
+    
+    <div class = "container">
+    <div class = "item1"><img src = "test.jpg"/></div>
+    <div class = "item2"> <button onclick="location.href = 'magazines.html'"> Magazine Editions </button> </div>
+    <div class = "item2"> <button onclick="location.href = 'adventures.html'"> Adventures </button> </div>
+    <div class = "item2"> <button onclick="location.href = 'trips.html'"> Trips </button> </div>
+    <div class = "item2"> <button onclick="location.href = 'cooking.html'"> Cooking </button> </div>
+    <div class = "item2"> <button onclick="location.href = 'fountain pens.html'"> Fountain pens </button> </div>
+    <div class = "item2"> <button onclick="location.href = 'restaurant guides.html'"> Restaurant guides </button> </div>
+    <div class = "item2"> <button onclick="location.href = 'library.html'"> Library </button> </div>
+    <div class = "item2"> <button onclick="location.href = 'code hub.html'"> Code hub </button> </div>
+    </div>
 
-<h1>Félix Bélair</h1>
-<h3>Hello and welcome to my website!</h3>
+    <h2>
+        Subscribe to our newsletter!
+    </h2>
 
-<button type="button" onclick="location.href = 'photos.html'">Photos</button>
-<button type="button" onclick="location.href = 'pens.html'">Fountain Pens</button>
-<button type="button" onclick="location.href = 'files/Felix_Resume.pdf'">CV</button>
+    <p1>
+        Get an email when we upload our newest edition of our newsletter.
+    </p1>
 
+    <p1>
+        Last updated: October 19, 2025
+    </p1>
 
-
-<div><img src = "images/Vancouver.JPG" alt = "Me at the top of a hike in Vancouver"/></div>
-
-<h1>About Myself:</h1>
-
-<p>
-    I am a physics student starting off a masters in applied physics at EPFL in Switzerland.
-    I just finished my undergrad at McGill in physics and did my thesis in atmospheric sciences.
-    Whenever I have the time and weather is nice, I enjoy outdoor rock climbing, hiking and biking!
-    Photos of my outdoor trips can be found <a href="https://felixbelair.ca/photos.html"> here</a> and i try to log my bike rides on <a href="https://www.strava.com/athletes/64401486"> Strava</a>.
-    I love puzzle games. My personal favorites include The Witness, Tametsi and I have recently discovered Craking The Cryptic.
-    I also have a nice collection of fountain pens and enjoy writing letters!
-</p>
-
-
-
-<h1>Music</h1>
-
-<p>
-    I went to a music high-school and ended up playing the flute every day between grade 8-11.
-    Those were amazing years of my life and taught me how to appreciate classical music.
-    To this day, it remains my most-listened-to genre, and I even have a Spotify <a href = "https://open.spotify.com/playlist/2RVL0Uf1T54AT2GPMJXKz0?si=ced7cba31d744fc6">playlist</a> I like to recommend to friends who share the same passion :)
-    I also have a second <a href = "https://open.spotify.com/playlist/0DPoWTUkyCEA9JuGNdV1Wm?si=1f8fbf9635e24ed8">playlist</a> centered around relaxing slow movements.
-    I often listen to it when studying or working on assignments.
-</p>
-
-
-
-<p>
-    Last updated: October 19, 2025
-</p>
-
+    
 </body>
 </html>
