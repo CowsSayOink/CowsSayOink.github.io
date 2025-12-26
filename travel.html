@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Travel</title>
-<link rel="icon" type="image/x-icon" href="/Images/home_page/favicon.svg">
+<link rel="icon" type="image/x-icon" href="Images/home_page/favicon.svg">
 
   <style>
     body{
@@ -33,30 +33,34 @@
     color: #f6f6e9;
     }
 
-     /* Style the tab */
-    .tab {
+    /* navbar stuff */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
       overflow: hidden;
       background-color: #f6f6e9;
-
     }
 
-    /* Style the buttons that are used to open the tab content */
-    .tab button {
-      background-color: inherit;
-      color: #7b3911;
+    ul li {
       float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
     }
 
-    /* Change background color of buttons on hover */
-    .tab button:hover {
+    ul li a {
+      display: block;
+      color: #7b3911;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
       background-color: #ddddc2;
     }
-
+    ul li a.active {
+      background-color: #04AA6D;
+    }
+    
   </style>
 
 </head>
@@ -64,21 +68,27 @@
 <body>
 
    <!-- Tab links -->
-  <div class="tab">
-    <button class="tablinks" onclick="location.href = 'index.html'">Home</button>
-    <div class = "tablinks"> <button onclick="location.href = 'magazines.html'"> Magazine Editions </button> </div>
-    <div class = "tablinks"> <button onclick="location.href = 'adventures.html'"> Adventures </button> </div>
-    <div class = "tablinks"> <button onclick="location.href = 'cooking.html'"> Cooking </button> </div>
-    <div class = "tablinks"> <button onclick="location.href = 'fountain pens.html'"> Fountain pens </button> </div>
-    <div class = "tablinks"> <button onclick="location.href = 'restaurant guides.html'"> Restaurant guides </button> </div>
-    <div class = "tablinks"> <button onclick="location.href = 'library.html'"> Library </button> </div>
-    <div class = "tablinks"> <button onclick="location.href = 'code hub.html'"> Code hub </button> </div>
-  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="magazines.html">Magazine Editions</a></li>
+    <li><a href="adventures.html">Adventures</a></li>
+    <li><a href="travel.html" class="active">Travel</a></li>
+    <li><a href="cooking.html">Cooking</a></li>
+    <li><a href="fountain pens.html">Fountain Pens</a></li>
+    <li><a href="restaurant guides.html">Restaurant Guides</a></li>
+    <li><a href="library.html">Library</a></li>
+    <li><a href="code hub.html">Code Hub</a></li>
+
+  </ul>
 
 
 
 <h1>Travel</h1>
-<p1>This is a paragraph.</p1>
+
+  
+<p1>
+  We are currently working on other parts of the website, but we will soon add more to this page. Outside of our outdoor adventures, we enjoy travelling and visiting cities. So far, we have visited Brussels, Amsterdam, Chamonix, and Vancouver together! 
+</p1>
 
 </body>
 </html> 
