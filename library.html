@@ -65,6 +65,93 @@
       color: orange;
     }
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f6f6e9;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+      background-color: transparent;
+      width: 215px;
+      height: 390px;
+      border: 1px solid #f6f6e9;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      background-color: #f6f6e9;
+      color: #7b3911;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+      background-color: #f6f6e9;
+      color: #7b3911;
+      transform: rotateY(180deg);
+    }
+    
+
+
+@media (max-width: 384px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.checked {
+  color: orange;
+}
+
   </style>
 
 </head>
@@ -86,20 +173,222 @@
 
 
 
-<h1>Library</h1>
 
-  
-<p1>This is a star</p1>
+<h1>2025 Reads</h1>
+<h2>Buddy Reads</h2>
+<p1>These are books the Lilly and Felix read together throughout the year!</p1>
 
-<!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<section class ="card-container">
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Project Hail Mary</h3>
+        <img src="Images/book_covers/hail-mary.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <p> This sci-fi novel was full of science and frienship. We really enjoyed the science concepts behind the discoveries and the problem solving involved in research parts of the plot. 
+          That being said, we found the physics was explained too many times. He explained gravity at least 5 times and kept using Excel spreadsheets for calculations ranging from simple math to orbital mechanics. This book could have been 100 pages shorter with all of the unnecessary repetition.</p></div></div></div></article>
+  
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Into Thin Air</h3>
+        <img src="Images/book_covers/into-thin-air.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p> Our first alpine non-fiction. The memoir follows Jon Krakauer's journey summiting Everest and the disaster that followed. Jon introduces the numerous teams and people on the mountain that season. It was bittersweet to learn about the individuals only to then read about their last moments. The survival half of the story is intense as the author deals with guilt and grief. The ethical dilemmas about survival in mountaineering were interesting to discuss together while reading the novel.</p></div></div></div></article>
+  
+  <article class = "card" > 
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h3>A Wizard's Guide to Defensize Baking</h3>
+      <img src="Images/book_covers/defensive-baking.jpg" alt="Avatar" style="width:200px">
+    </div>
+    <div class="flip-card-back">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <p> This novel features a young magician with powers related to baking. The story has a very creative magic system with a unique coming-of-age plot. We loved the baking elements of the book! Literally everytime we picked it up we wanted to bake afterwards. It surprised us that the author doesn't bake much, but was able to make a book completely centred around it. We would highly recommend this novel if you are looking for a cozy middle grade. </p></div></div></div></article>
 
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span> 
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Murder on the Orient Express</h3>
+        <img src="Images/book_covers/MurderOnTheOrientExpress.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p> We could not put this novel down! It follows Poirot as he tries to solve a murder of a passenger while isolated on the Orient Express. We enjoyed the writing style and the characters were both engaging and complex. We didn't know who to believe and were surprised by the ending! That being said we were dissapointed with who committed the crime. Overall we would definitely recommend!
+</p></div></div></div></article>
 
+
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Le Petit Prince</h3>
+        <img src="Images/book_covers/le-petit-prince.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+              <p> Unexpected gem! It is a middle grade novel about a prince who leaves his home asteroid to explore other planets - ultimately arriving on Earth. It features friendship, and childhood imagination through lyrical and humorous prose. We are really happy people of all ages can enjoy this novel. </p></div></div></div></article>
+
+
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Atonement</h3>
+        <img src="Images/book_covers/atonement.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+              <p> This historical fiction follows the Tallis family through several stages of the youngest sibling's life. The writing in this book was interesting. In some ways it felt silly that a 13 year old had an inner monologue that was more advanced than ours, but it was nicely written. The novel felt like 3 losely connected plot lines. One of the plots centered on WWII and felt unnecessary for the narrative. That being said the ending was satisfying. We later watched and enjoyed the 2007 movie.
+
+</p> </div></div></div></article>
+
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Carmilla</h3>
+        <img src="Images/book_covers/carmilla.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+              <p> Carmilla is an early vampire novel (26 years earlier than Dracula) that helped define the gothic genre! This novel is short and written origianlly in serial so it was quick and concise. The novel features a gothic romance between two female characters - one of which is a vampire!
+</p></div></div></div></article>
+
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Sunrise on the Reaping</h3>
+        <img src="Images/book_covers/sunrise.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+              <p> A new exciting addition to the Hunger Games world! It was great to be back in this dystopian world again. There was a lot of nostalgia, but because of the original novels, there was never any true suspense while reading the book. This also meant that there wasn't the same magic to the world building or political commentary. Looking forward to watching the movie in 2026!
+</p></div></div></div></article>
+
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Frankenstein</h3>
+        <img src="Images/book_covers/frankenstein.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+              <p> Frakenstein - the first science-fiction needs no introduction! We enjoyed the story and the twists it takes. We enjoyed how the plotline takes us to locations that we have recently been to while in Europe (primarly Swiss Alps!). We really appreciated how the author encorporates nature and the outdoors into the character development and plot. The dialogue between Frankenstein and his monster is dramatic and fun to read - although funny since the monster only just learned to speak French. </p></div></div></div></article>
+
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Little Eyes</h3>
+        <img src="Images/book_covers/little-eyes.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+              <p> This is a translated dystopian novel that could be considered a thought experiment to discuss remote surveillance technology. The book features small chapters the delve into the lives of different individuals using this technology. Overall, we enjoyed the writing and pacing, but it felt like the novel did not introduce anything new to the discussion. We were left wanting a more in depth analysis of the themes the world introduces, and how it connects to our current society.</p></div></div></div></article>
+
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Blood Over Bright Haven</h3>
+        <img src="Images/book_covers/blood-over.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+              <p> This fantasy novel features a female mage trying to work her way up in a male-dominated institution. The magic system is similar to coding which we found unique and engaging. From the first page we were hooked and wanted to learn more. The ending was complete and satisfying for us but we felt that it could have been shorter. Although initially engaging, the themes related to the patriarchical setting were repetitive by the end. 
+</p></div></div></div></article>
+
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Tress of the Emerald Sea</h3>
+        <img src="Images/book_covers/tress-of-the-emerald-sea.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+              <p> This cozy fantasy follows Tress as she travels across various seas to save her love interest. The worldbuilding is captivating and creative. The characters have a deep and heartwarming bond with each other. The writing style is lighthearted and humourous. Felix enjoyed this tone but Lilly found it hard to connect with the characters. We are curious to read more works by Brandon Sanderson!  
+</p></div></div></div></article>
+
+  <article class = "card" >
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>The Left Hand of Darkness</h3>
+        <img src="Images/book_covers/leguin-lefthandofdarkness.jpg" alt="Avatar" style="width:200px">
+      </div>
+      <div class="flip-card-back">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+              <p>  The author's introduction to the novel was very insightful and made us eager to delve into the story. The story itself features our protagonist on a diplomatic mission to connect with the people on a remote planet. The planet itself is very interesting. The environment is hostile and the people are non-gendered. Both of these aspects lead to an imaginative society (both technologically and socially). The second half of the novel makes survival in this environment a key part of the plot. We found this very captivating. 
+</p></div></div></div></article>
+
+</section>
+    
 </body>
 </html> 
 
