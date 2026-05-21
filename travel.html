@@ -12,6 +12,7 @@
         margin: 25px;
         padding: 0;
         box-sizing: border-box;
+
     }
 
     h1 {
@@ -60,6 +61,12 @@
     ul li a.active {
       background-color: #04AA6D;
     }
+
+    .map {
+      width: 100%;
+      height: min(80vh, 1000px);   /* 80% of viewport height */
+      border: none;
+    }
     
   </style>
 
@@ -83,12 +90,13 @@
 
 
 
-<h1>Travel</h1>
+<h1>Travel Map</h1>
 
-  
-<p1>
-  We are currently working on other parts of the website, but we will soon add more to this page. Outside of our outdoor adventures, we enjoy travelling and visiting cities. So far, we have visited Brussels, Amsterdam, Chamonix, and Vancouver together! 
-</p1>
+
+<iframe src="travel_map.html" class="map"></iframe>
+
+
+
 
 </body>
 </html> 
