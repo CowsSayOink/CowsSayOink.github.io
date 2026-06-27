@@ -61,19 +61,30 @@
       background-color: #04AA6D;
     }
     
-    div.gallery {
 
-    }
 
-    div.gallery:hover {
-      color: #ffb905;
-    }
+            .container {
+          display: grid;
+          width: 320px;
+          gap: 10px;
+          grid-template-columns: auto auto auto auto auto;
+          padding: 0px;
+        }
 
-    div.gallery img {
-      width: 250px;
-      height: auto;
+        .container div {
+        border-radius: 10px;
+        padding: 5px;
+        font-family: "Space Mono";
+        font-size: 20px;
+        text-align: center;
+        }
 
-    }
+
+
+        .coverpage{
+            width: 300px;
+        }
+
 
   </style>
   
@@ -99,12 +110,13 @@
   
 <h1>Magazine Editorial</h1>
 
-  <div class="gallery">
-    <a target="_blank" href = "Magazines/Summer 2025 Mag.pdf">
-      <img src="Magazines/Summer_2025_cover.png">
-    </a>
+       <div class = "container">
+        <div class = "item"><a target="_blank" href="Magazines/Fall_2025_mag.pdf"><img class = "coverpage" src = "Magazines/Fall_2025_cover.png"/></a> <p1> Fall 2025 </p1> </div>
+        <div class = "item"><a target="_blank" href="Magazines/Summer_2025_mag.pdf"><img class = "coverpage" src = "Magazines/Summer_2025_cover.png"/></a> <p1> Summer 2025 </p1> </div>
 
-  </div>
+    </div>
+
+
 
 
 </body>
