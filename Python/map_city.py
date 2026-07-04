@@ -19,7 +19,10 @@ map.add_child(folium.LayerControl(position='topright', collapsed=False, autoZInd
 
 # add city locations
 #import csv file
-travel = pd.read_csv(r"C:\Users\Lilly\Documents\venv\Travel.csv").to_dict(orient="records")
+
+#travel = pd.read_csv(r"C:\Users\Lilly\Documents\venv\Travel - Sheet1.csv").to_dict(orient="records")
+travel = pd.read_csv(r"C:\Users\felix\PycharmProjects\CowsSayOink.github.io\Python\Travel - Sheet1.csv").to_dict(orient="records")
+
 
 # create marker and add it to biking feature group
 for city in travel:
