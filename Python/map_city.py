@@ -30,5 +30,5 @@ for city in travel:
     folium_marker.add_to(fg_city)
 
 
-map.save('travel_map.html')
+map.save(r'..\travel_map.html')
 print('Done')
