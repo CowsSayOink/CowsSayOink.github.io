@@ -31,4 +31,4 @@ for city in travel:
 
 
 map.save('travel_map.html')
-webbrowser.open('../travel_map.html')
+print('Done')
